@@ -9,6 +9,6 @@ public class Anime
         myAnime.add("One Piece");
         myAnime.add("Bleach");
 
-        System.err.println(myAnime);
+        System.out.println(myAnime);
    } 
 }
