@@ -14,7 +14,7 @@ Welcome to my GitHub repository for academic assignments and coursework as part 
 ├── 📁 Lab2
 │   ├── 📁 Assignment
 │   └── 📁 readmelab2
-├── (continues the parten)
+├── (continues the pattern)
 └── 📁 Readme
 </pre>
 ---
