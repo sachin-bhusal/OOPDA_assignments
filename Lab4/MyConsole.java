@@ -1,11 +1,10 @@
 package Lab4;
-
-public class MyConsole extends Console {
+public class MyConsole extends Console 
+{
     public MyConsole() 
     {
         super();
-    }
-
+    }  
     @Override
     public String getString(String prompt) 
     {
@@ -17,8 +16,7 @@ public class MyConsole extends Console {
             if (s.equals("")) 
             {
                 System.out.println("Error! This entry is required. Try again.");
-            } 
-            else 
+            } else 
             {
                 isValid = true;
             }
@@ -26,3 +24,4 @@ public class MyConsole extends Console {
         return s;
     }
 }
+

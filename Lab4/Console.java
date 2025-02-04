@@ -2,15 +2,14 @@ package Lab4;
 import java.util.Scanner;
 
 public class Console 
-{    
+{
     private static final Scanner sc = new Scanner(System.in);
     public String getString(String prompt) 
     {
         System.out.print(prompt);
         return sc.nextLine(); 
     }
-
-    public static int getInt(String prompt) 
+    public static int getInt(String prompt)
     {
         while (true) 
         {
@@ -25,23 +24,22 @@ public class Console
             }
         }
     }
-
-    public static int getInt(String prompt, int min, int max) {
+    public static int getInt(String prompt, int min, int max) 
+    {
         while (true) 
         {
             int value = getInt(prompt);
             if (value > min && value < max) 
             {
                 return value;
-            } 
-            else 
+            } else 
             {
                 System.out.println("Error! Number must be greater than "+ min + " and less than " + max + ".");
             }
         }
     }
 
-    public static double getDouble(String prompt)
+    public static double getDouble(String prompt) 
     {
         while (true) 
         {
@@ -49,7 +47,7 @@ public class Console
             try 
             {
                 return Double.parseDouble(sc.nextLine());
-            } 
+            }
             catch(NumberFormatException e) 
             {
                 System.out.println("Error! Invalid integer value.");
