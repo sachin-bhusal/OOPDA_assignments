@@ -10,7 +10,6 @@ public class Checker
          while (continueChecking) 
          {
              int number = Console.getInt("Enter an integer: "); 
- 
              if (number % 2 == 0) 
              {
                  System.out.println("The number " + number + " is even.");
@@ -19,7 +18,6 @@ public class Checker
              {
                  System.out.println("The number " + number + " is odd.");
              }
- 
              String choice;
              while (true) 
              {
@@ -38,8 +36,7 @@ public class Checker
                      System.out.println("Error! Enter 'y' or 'n'. Try again.");
                  }
              }
-         }
-         
+            }
          System.out.println("Thank you for using Odd/Even Checker!");
     }
  }
