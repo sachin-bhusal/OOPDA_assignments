@@ -1,0 +1,1 @@
+When a subclass extends a superclass, it means the subclass inherits the properties and behaviors (methods) of the superclass while also having the ability to add its own unique features or modify existing ones.
