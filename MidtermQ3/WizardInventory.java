@@ -11,7 +11,7 @@ public class WizardInventory
     {
         Scanner sc = new Scanner(System.in);
         ArrayList<String> inventory = new ArrayList<>();
-
+                    
         inventory.add("wooden staff");
         inventory.add("wizard hat");
         inventory.add("cloth shoes");
