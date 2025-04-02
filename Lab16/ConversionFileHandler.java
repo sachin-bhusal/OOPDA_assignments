@@ -31,7 +31,7 @@ public class ConversionFileHandler
             out.writeObject(conversions);
             return true;
         } 
-        catch (IOException e) 
+        catch (IOException e)
         {
             System.out.println("Error saving conversion file: " + e.getMessage());
             return false;
