@@ -11,7 +11,8 @@ public class ConversionFileHandler
     {
         ArrayList<Conversion> conversions = new ArrayList<>();
         File file = new File(FILE_NAME);
-        if (!file.exists()) return conversions;
+        if (!file.exists()) 
+        return conversions;
         
         try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(file))) 
         {
