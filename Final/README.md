@@ -84,13 +84,6 @@ The main entry point to launch the game.
 - Java 8 or higher
 - Command-line / terminal access
 
----
-
-## 🙌 Author
-
-**Sachin Bhusal**  
-Rowan University – Computer Science  
-Project for Week 9 Case Study: Object-Oriented Blackjack
 
 ---
 

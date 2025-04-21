@@ -2,7 +2,8 @@ package Final;
 
 import java.util.*;
 
-public class Hand {
+public class Hand 
+{
     private List<Card> cards;
 
     public Hand() 

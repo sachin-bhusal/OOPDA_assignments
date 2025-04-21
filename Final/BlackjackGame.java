@@ -44,35 +44,48 @@ public class BlackjackGame
             io.showCards("YOUR CARDS", player, true);
 
             // Player's turn
-            while (player.getTotalPoints() < 21) {
+            while (player.getTotalPoints() < 21) 
+            {
                 String move = io.promptHitOrStand();
-                if (move.equals("h")) {
+                if (move.equals("h")) 
+                {
                     player.addCard(deck.dealCard());
                     io.showCards("YOUR CARDS", player, true);
-                } else {
+                } 
+                else 
+                {
                     break;
                 }
             }
 
             int playerPoints = player.getTotalPoints();
-            if (playerPoints > 21) {
+            if (playerPoints > 21) 
+            {
                 System.out.println("You busted!");
                 totalMoney -= bet;
-            } else {
+            } 
+            else 
+            {
                 // Dealer's turn
-                while (dealer.getTotalPoints() < 17) {
+                while (dealer.getTotalPoints() < 17) 
+                {
                     dealer.addCard(deck.dealCard());
                 }
 
                 io.showCards("DEALER'S CARDS", dealer, true);
                 int dealerPoints = dealer.getTotalPoints();
 
-                if (dealerPoints > 21 || playerPoints > dealerPoints) {
+                if (dealerPoints > 21 || playerPoints > dealerPoints) 
+                {
                     System.out.println("You win!");
                     totalMoney += bet;
-                } else if (playerPoints == dealerPoints) {
+                } 
+                else if (playerPoints == dealerPoints) 
+                {
                     System.out.println("You pushed.");
-                } else {
+                } 
+                else 
+                {
                     System.out.println("Dealer wins.");
                     totalMoney -= bet;
                 }
@@ -80,9 +93,12 @@ public class BlackjackGame
 
             System.out.printf("Total money: $%.2f%n%n", totalMoney);
 
-            if (totalMoney >= minBet) {
+            if (totalMoney >= minBet) 
+            {
                 play = io.playAgainPrompt();
-            } else {
+            } 
+            else 
+            {
                 System.out.printf("You're below the minimum bet of $%.2f.%n", minBet);
             }
         }
