@@ -1,0 +1,1 @@
+The compareTo(...) method from Program 4 would be added to the GolfBall class.
